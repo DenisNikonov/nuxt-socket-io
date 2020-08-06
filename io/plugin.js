@@ -878,7 +878,7 @@ function nuxtSocket(ioOpts) {
       ? persist
       : `${useSocket.name}${channel}`
 
-  if (!store.state.$nuxtSocket) {
+  if (false) {
     debug('vuex store $nuxtSocket does not exist....registering it')
     register.vuexModule({ store })
   }
